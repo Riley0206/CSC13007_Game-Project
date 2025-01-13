@@ -141,8 +141,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetDestination: {fileID: 0}
-  speed: 3
-  hp: 10
+  speed: 0
+  hp: 100
   attackDamage: 5
   timeBetweenAttacks: 2
   exp_reward: 20
