@@ -14,12 +14,6 @@ public class Player_Control : MonoBehaviour
 
     [SerializeField] float speed = 5f;
 
-    private void Start()
-    {
-        lastHorizontalVector = 1;
-        lastVerticalVector = -1;
-    }
-
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
