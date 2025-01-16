@@ -7,8 +7,19 @@ public class DropOnDestroy : MonoBehaviour
     [Range(0, 1)]
     float DropChance = 1;
 
-    private void OnDestroy()
+    bool isQuitting;
+
+    private void OnApplicationQuit()
     {
+        isQuitting = true;
+    }
+
+    public void CheckDrop()
+    {
+        if (isQuitting)
+        {
+            return;
+        }
         if (Random.value < DropChance)
         {
             Transform t = Instantiate(DroppedItem).transform;
