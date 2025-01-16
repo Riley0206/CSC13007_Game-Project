@@ -16,7 +16,7 @@ public class DropOnDestroy : MonoBehaviour
 
     public void CheckDrop()
     {
-        if (isQuitting || GetComponent<Character>().isDead)
+        if (isQuitting)
         {
             return;
         }

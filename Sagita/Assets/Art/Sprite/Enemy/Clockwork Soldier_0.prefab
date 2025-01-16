@@ -210,7 +210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DroppedItem: {fileID: 7889214618960079822, guid: 54ff6344cd3532a4e9b59af7dea15d44, type: 3}
-  DropChance: 0.3
+  DropChance: 0.5
 --- !u!114 &-1874688248164466382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,4 +224,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DroppedItem: {fileID: 1050421589569698350, guid: 729f89e749aa5364abbfd8ed5948c7e5, type: 3}
-  DropChance: 0.5
+  DropChance: 0.3
