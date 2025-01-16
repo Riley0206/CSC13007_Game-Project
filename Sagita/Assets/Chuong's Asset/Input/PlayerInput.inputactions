@@ -9,7 +9,7 @@
                     "name": "Movement",
                     "type": "Value",
                     "id": "85e55a8c-9187-4a97-9d64-c7e5ea441ebf",
-                    "expectedControlType": "",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -17,8 +17,8 @@
             ],
             "bindings": [
                 {
-                    "name": "WSAD",
-                    "id": "4fb0575c-13ae-4253-a913-6b3bf5db5a02",
+                    "name": "WASD",
+                    "id": "80c8f807-1885-41c0-af8e-a1c9254deb6f",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
@@ -29,7 +29,7 @@
                 },
                 {
                     "name": "up",
-                    "id": "79846d3d-e750-4ffc-a87b-e34a521628c9",
+                    "id": "b5002415-156f-421b-bc55-be1e5a64d9c0",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
@@ -40,7 +40,7 @@
                 },
                 {
                     "name": "down",
-                    "id": "c6e1a318-ebd2-4103-91af-e85905a32ba9",
+                    "id": "8c32a774-c0ab-4653-8b98-32d2d6a3139c",
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
@@ -51,7 +51,7 @@
                 },
                 {
                     "name": "left",
-                    "id": "da9391bf-5227-4cbc-887f-a1ca2e3fc56e",
+                    "id": "a1c95fec-0b59-4a55-ae29-9191833ac161",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
@@ -62,7 +62,7 @@
                 },
                 {
                     "name": "right",
-                    "id": "e68773d5-e79f-4006-936d-a3433cf65fc4",
+                    "id": "7dde9098-bac1-44a4-b84c-21e0a13ac40c",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
