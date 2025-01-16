@@ -22,16 +22,19 @@ public class Character : MonoBehaviour
         hpBar.SetState(currentHP, maxHP);
     }
 
+    [HideInInspector]public bool isDead = false;
     public void TakeDamage(int damage)
     {
+        if (isDead) { return; }
         ApplyArmor(ref damage);
 
         currentHP -= damage;
+        hpBar.SetState(currentHP, maxHP);
         if (currentHP <= 0)
         {
+            isDead = true;
             Die();
         }
-        hpBar.SetState(currentHP, maxHP);
     }
 
     private void ApplyArmor(ref int damage)
@@ -45,7 +48,7 @@ public class Character : MonoBehaviour
 
     public void Die()
     {
-        Debug.Log("Character died");
+        GetComponent<GameOver>().gameOver();
     }
 
     public void Heal(int amount)
