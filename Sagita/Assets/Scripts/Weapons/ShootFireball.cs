@@ -2,13 +2,9 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class ShootFireball : MonoBehaviour
+public class ShootFireball : WeaponBase
 {
-
     Player_Control playerMove;
-
-    [SerializeField] float timetoAttack;
-    float timer;
 
     [SerializeField] GameObject FireballPrefab;
 
@@ -17,18 +13,7 @@ public class ShootFireball : MonoBehaviour
         playerMove = GetComponentInParent<Player_Control>();
     }
 
-    private void Update()
-    {
-        if (timer < timetoAttack)
-        {
-            timer += Time.deltaTime;
-            return;
-        }
-        timer = 0;
-        SpawnFireball();
-    }
-
-    private void SpawnFireball()
+    public override void Attack()
     {
         GameObject ShotFireball = Instantiate(FireballPrefab);
         ShotFireball.transform.position = transform.position;

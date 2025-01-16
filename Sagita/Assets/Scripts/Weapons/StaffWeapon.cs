@@ -1,12 +1,8 @@
 using System;
 using UnityEngine;
 
-public class StaffWeapon : MonoBehaviour
+public class StaffWeapon : WeaponBase
 {
-    [SerializeField] float timeToAttack = 3f;
-    [SerializeField] int staffDamage = 5;
-    float timer;
-
     [SerializeField] private GameObject leftStaffStrike;
     [SerializeField] private GameObject rightStaffStrike;
 
@@ -16,22 +12,22 @@ public class StaffWeapon : MonoBehaviour
     private void Awake()
     {
         playerControl = GetComponentInParent<Player_Control>();
-    }
+    } 
 
-    private void Update()
+    private void ApplyDamage(Collider2D[] colliders)
     {
-        timer -= Time.deltaTime;
-        if (timer <= 0)
+        for (int i = 0; i < colliders.Length; i++)
         {
-            Attack();
-            timer = timeToAttack;
+            IDamagable e = colliders[i].GetComponent<IDamagable>();
+            if (e != null)
+            {
+                e.TakeDamage(weaponStats.damage);
+            }
         }
     }
 
-    void Attack()
+    public override void Attack()
     {
-        timer = timeToAttack;
-
         if (playerControl.lastHorizontalVector > 0)
         {
             rightStaffStrike.SetActive(true);
@@ -43,18 +39,6 @@ public class StaffWeapon : MonoBehaviour
             leftStaffStrike.SetActive(true);
             Collider2D[] colliders = Physics2D.OverlapBoxAll(leftStaffStrike.transform.position, staffAttackSize, 0f);
             ApplyDamage(colliders);
-        }
-    }
-
-    private void ApplyDamage(Collider2D[] colliders)
-    {
-        for (int i = 0; i < colliders.Length; i++)
-        {
-            IDamagable e = colliders[i].GetComponent<IDamagable>();
-            if (e != null)
-            {
-                e.TakeDamage(staffDamage);
-            }
         }
     }
 }
