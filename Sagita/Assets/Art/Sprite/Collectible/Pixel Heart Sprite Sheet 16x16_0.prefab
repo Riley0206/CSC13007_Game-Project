@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1363921382982986615}
   - component: {fileID: 101412748434574994}
   - component: {fileID: 6420348267315278311}
-  - component: {fileID: -4122332478222818196}
   - component: {fileID: -4230286921186129609}
   m_Layer: 0
   m_Name: Pixel Heart Sprite Sheet 16x16_0
@@ -102,19 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62fd5f3481e674a4283d3667f3087691, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-4122332478222818196
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 382598572370317332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54664e3bb1f74204295f47ead30de14a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healAmount: 30
+  HealAmount: 30
 --- !u!58 &-4230286921186129609
 CircleCollider2D:
   m_ObjectHideFlags: 0

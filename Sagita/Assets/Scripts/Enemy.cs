@@ -72,7 +72,6 @@ public class Enemy : MonoBehaviour, IDamagable
     public void Die()
     {
         targetCharacter.GetComponent<Level>().AddExperience(exp_reward);
-        GetComponent<DropOnDestroy>().CheckDrop();
         Destroy(gameObject);
     }
 }
