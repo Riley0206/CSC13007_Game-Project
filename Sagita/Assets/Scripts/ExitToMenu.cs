@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameOverExit : MonoBehaviour
+public class ExitToMenu : MonoBehaviour
 {
     public void BackToMenu()
     {
