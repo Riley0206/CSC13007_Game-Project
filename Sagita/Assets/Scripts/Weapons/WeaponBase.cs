@@ -28,4 +28,9 @@ public abstract class WeaponBase : MonoBehaviour
 
         weaponStats = new WeaponStats(wd.stats.damage, wd.stats.timeToAttack);
     }
+
+    public virtual void PostDamage(int damage, Vector3 position)
+    {
+        MessageSystem.instance.ShowMessage(damage.ToString(), position);
+    }
 }

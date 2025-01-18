@@ -21,6 +21,7 @@ public class StaffWeapon : WeaponBase
             IDamagable e = colliders[i].GetComponent<IDamagable>();
             if (e != null)
             {
+                PostDamage(weaponStats.damage, colliders[i].transform.position);
                 e.TakeDamage(weaponStats.damage);
             }
         }

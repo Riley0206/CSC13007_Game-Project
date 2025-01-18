@@ -129,6 +129,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -409,7 +435,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      2204_w017_n001_440b_p15_440-removebg-preview_0: 4770340949311242314
+      2204_w017_n001_440b_p15_440-removebg-preview_1: -8976138345648803532
+      2204_w017_n001_440b_p15_440-removebg-preview_10: -1368689519305614622
+      2204_w017_n001_440b_p15_440-removebg-preview_11: -8625466025629937653
+      2204_w017_n001_440b_p15_440-removebg-preview_2: -2617991172579695317
+      2204_w017_n001_440b_p15_440-removebg-preview_3: 8428729767354600496
+      2204_w017_n001_440b_p15_440-removebg-preview_4: 4503850343115158976
+      2204_w017_n001_440b_p15_440-removebg-preview_5: -6155837348002712175
+      2204_w017_n001_440b_p15_440-removebg-preview_6: -2448011657230637737
+      2204_w017_n001_440b_p15_440-removebg-preview_7: 2508954659200466778
+      2204_w017_n001_440b_p15_440-removebg-preview_8: 9035922870292609893
+      2204_w017_n001_440b_p15_440-removebg-preview_9: 2988532114710622384
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
