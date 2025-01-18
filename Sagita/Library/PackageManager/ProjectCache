@@ -611,8 +611,10 @@ m_ResolvedPackages:
     - 1.11.0
     - 1.11.1
     - 1.11.2
+    - 1.12.0
     compatible:
     - 1.11.2
+    - 1.12.0
     recommended: 1.11.2
     deprecated: []
   dependencies:
@@ -5560,11 +5562,16 @@ m_ResolvedPackages:
     - 1.1.5
     - 1.1.6
     - 1.1.7
+<<<<<<< HEAD
+=======
+    - 1.1.8
+>>>>>>> basic-functions
     - 1.2.0
     compatible:
     - 1.1.6
     - 1.1.7
-    recommended: 1.1.7
+    - 1.1.8
+    recommended: 1.1.8
     deprecated: []
   dependencies:
   - name: com.unity.2d.common

@@ -61,6 +61,7 @@
     <Analyzer Include="D:\Unity Hub\6000.0.28f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\Character.cs" />
     <Compile Include="Assets\Scripts\ShootFireball.cs" />
     <Compile Include="Assets\Scripts\Object.cs" />
@@ -86,6 +87,47 @@
     <Compile Include="Assets\Scripts\ExperienceBar.cs" />
     <Compile Include="Assets\Scripts\ShootingFireballProjectile.cs" />
     <Compile Include="Assets\Scripts\StaffWeapon.cs" />
+=======
+    <Compile Include="Assets\Scripts\Manager\PauseManager.cs" />
+    <Compile Include="Assets\Scripts\Weapons\WeaponBase.cs" />
+    <Compile Include="Assets\Scripts\Logic\PickUp.cs" />
+    <Compile Include="Assets\Scripts\Manager\SpawnControl.cs" />
+    <Compile Include="Assets\Scripts\UI\ExperienceBar.cs" />
+    <Compile Include="Assets\Scripts\Logic\ICollectible.cs" />
+    <Compile Include="Assets\Scripts\Logic\Enemy_Spawn_Script.cs" />
+    <Compile Include="Assets\Scripts\Base\Item.cs" />
+    <Compile Include="Assets\Scripts\Manager\GameManagerScript.cs" />
+    <Compile Include="Assets\Scripts\Logic\ExperiencePickup.cs" />
+    <Compile Include="Assets\Scripts\Base\Character.cs" />
+    <Compile Include="Assets\Scripts\Manager\WeaponManager.cs" />
+    <Compile Include="Assets\Scripts\UI\StartButton.cs" />
+    <Compile Include="Assets\Scripts\Base\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Logic\DestructibleObject.cs" />
+    <Compile Include="Assets\Scripts\Manager\EnemiesManager.cs" />
+    <Compile Include="Assets\Scripts\Base\PassiveItems.cs" />
+    <Compile Include="Assets\Scripts\Logic\GameOver.cs" />
+    <Compile Include="Assets\Scripts\Logic\DropOnDestroy.cs" />
+    <Compile Include="Assets\Scripts\Logic\CoinPickup.cs" />
+    <Compile Include="Assets\Scripts\UI\UpgradePanelManager.cs" />
+    <Compile Include="Assets\Scripts\UI\MainMenuRef.cs" />
+    <Compile Include="Assets\Scripts\Logic\ExitToMenu.cs" />
+    <Compile Include="Assets\Scripts\Logic\Player_Control.cs" />
+    <Compile Include="Assets\Scripts\Weapons\ShootFireball.cs" />
+    <Compile Include="Assets\Scripts\UI\ExitButton.cs" />
+    <Compile Include="Assets\Scripts\Logic\IDamagable.cs" />
+    <Compile Include="Assets\Scripts\Logic\Trap_Triggered.cs" />
+    <Compile Include="Assets\Scripts\Weapons\StaffWeapon.cs" />
+    <Compile Include="Assets\Scripts\Logic\DisapearAfterTime.cs" />
+    <Compile Include="Assets\Scripts\Manager\MusicManager.cs" />
+    <Compile Include="Assets\Scripts\Base\Coins.cs" />
+    <Compile Include="Assets\Scripts\Weapons\ShootingFireballProjectile.cs" />
+    <Compile Include="Assets\Scripts\Logic\LevelSelectClick.cs" />
+    <Compile Include="Assets\Scripts\Logic\HealPickup.cs" />
+    <Compile Include="Assets\Scripts\UI\StatusBar.cs" />
+    <Compile Include="Assets\Scripts\Base\Level.cs" />
+    <Compile Include="Assets\Data\WeaponData.cs" />
+    <Compile Include="Assets\Scripts\Base\Object.cs" />
+>>>>>>> basic-functions
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
